@@ -12,16 +12,19 @@ import android.widget.TextView;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import pl.droidsonroids.letmetakeaselfie.R;
-import pl.droidsonroids.letmetakeaselfie.loader.EmptyImageLoader;
 import pl.droidsonroids.letmetakeaselfie.loader.ImageLoader;
+import pl.droidsonroids.letmetakeaselfie.loader.PicassoImageLoader;
 import pl.droidsonroids.letmetakeaselfie.model.Selfie;
 
 public class SelfieView extends LinearLayout {
 
-    @Bind(R.id.text_user) TextView userNameText;
-    @Bind(R.id.image_photo) ImageView photoImage;
-
-    private final ImageLoader imageLoader = new EmptyImageLoader();
+    //private final ImageLoader imageLoader = new PlaceholderImageLoader();
+    private final ImageLoader imageLoader = new PicassoImageLoader();
+    @Bind(R.id.text_user)
+    TextView userNameText;
+    @Bind(R.id.image_photo)
+    ImageView photoImage;
+    //private final ImageLoader imageLoader = new URLImageLoader();
 
     public SelfieView(final Context context) {
         this(context, null);

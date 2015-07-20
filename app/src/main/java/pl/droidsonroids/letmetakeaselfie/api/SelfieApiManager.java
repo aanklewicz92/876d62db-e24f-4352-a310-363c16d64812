@@ -17,10 +17,6 @@ public final class SelfieApiManager {
 
     private final SelfieApiInterface selfieApiInterface;
 
-    public static SelfieApiManager getInstance() {
-        return INSTANCE;
-    }
-
     private SelfieApiManager() {
         RestAdapter restAdapter = new RestAdapter.Builder()
                 .setEndpoint(ENDPOINT)
@@ -28,6 +24,10 @@ public final class SelfieApiManager {
                 .build();
 
         selfieApiInterface = restAdapter.create(SelfieApiInterface.class);
+    }
+
+    public static SelfieApiManager getInstance() {
+        return INSTANCE;
     }
 
     public void getSelfies(Callback<GetSelfiesResponse> responseCallback) {

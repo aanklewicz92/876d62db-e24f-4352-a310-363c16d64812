@@ -19,7 +19,8 @@ import pl.droidsonroids.letmetakeaselfie.R;
 
 public class UserNameDialogFragment extends DialogFragment {
 
-    @Bind(R.id.edit_user_name) EditText userNameEdit;
+    @Bind(R.id.edit_user_name)
+    EditText userNameEdit;
 
     private OnUserNameTypedListener onUserNameTypedListener;
 

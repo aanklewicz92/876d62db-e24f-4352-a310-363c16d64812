@@ -8,7 +8,8 @@ import pl.droidsonroids.letmetakeaselfie.model.Selfie;
 
 public class GetSelfiesResponse {
 
-    @SerializedName("photos") private List<Selfie> selfies;
+    @SerializedName("photos")
+    private List<Selfie> selfies;
 
     public List<Selfie> getSelfies() {
         return selfies;

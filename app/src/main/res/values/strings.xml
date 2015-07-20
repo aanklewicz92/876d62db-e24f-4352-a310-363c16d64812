@@ -13,6 +13,8 @@
     <!-- Errors -->
     <string name="selfies_load_error">Couldn\'t load selfies :(</string>
     <string name="selfie_upload_error">Couldn\'t upload selfie :(</string>
+    <string name="no_camera">Sorry, this device has no camera</string>
+    <string name="rotation_error">Error during rotation</string>
 
     <!-- Content desc -->
     <string name="content_description_photo">Photo</string>

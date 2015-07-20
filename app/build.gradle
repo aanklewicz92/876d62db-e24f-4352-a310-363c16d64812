@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 22
-    buildToolsVersion "23.0.0 rc2"
+    buildToolsVersion "22.0.1"
 
     defaultConfig {
         applicationId "pl.droidsonroids.letmetakeaselfie"
@@ -32,4 +32,5 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:22.2.0'
     compile 'com.jakewharton:butterknife:7.0.1'
     compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
 }

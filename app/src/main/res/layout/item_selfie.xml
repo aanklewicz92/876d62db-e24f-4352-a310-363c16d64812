@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@android:color/white"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:ignore="Overdraw">
 
     <ImageView
         android:id="@+id/image_photo"
@@ -20,10 +21,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ellipsize="end"
-        android:paddingLeft="@dimen/margin_normal"
-        android:paddingTop="@dimen/margin_small"
-        android:paddingRight="@dimen/margin_normal"
         android:paddingBottom="@dimen/margin_small"
+        android:paddingLeft="@dimen/margin_normal"
+        android:paddingRight="@dimen/margin_normal"
+        android:paddingTop="@dimen/margin_small"
         android:singleLine="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
         tools:text="Selfie by: Test"/>

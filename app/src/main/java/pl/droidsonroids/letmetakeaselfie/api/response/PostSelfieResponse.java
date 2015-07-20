@@ -4,5 +4,6 @@ import com.google.gson.annotations.SerializedName;
 
 public class PostSelfieResponse {
 
-    @SerializedName("status") private String status;
+    @SerializedName("status")
+    private String status;
 }

@@ -7,10 +7,13 @@ import java.io.File;
 
 public class Selfie {
 
-    @Expose private File photoFile;
+    @Expose
+    private File photoFile;
 
-    @SerializedName("photo_url") private String photoUrl;
-    @SerializedName("user_name") private String userName;
+    @SerializedName("photo_url")
+    private String photoUrl;
+    @SerializedName("user_name")
+    private String userName;
 
     public File getPhotoFile() {
         return photoFile;
